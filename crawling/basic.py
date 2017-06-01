@@ -24,6 +24,7 @@ class Node:
     # </.*?> : </와 .(모든단어) *?> (첫번째 > 가 나올 때 까지 찾는다
 
     _pattern_tag_class = r'class=[\'\"]([.\w\W]*)[\'\"]'
+    #_pattern_tag_class = r'^\s*<.*?class=[\'\"](.*?)[\'\"]'
 
     def __init__(self, source):
     # init 메소드 ( 초기화 메소드 )를 생성하며 매개변수는 source를 갖는다
